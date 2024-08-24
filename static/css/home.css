@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    /* background-color: yellow; */
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #1f242d;
+    /* background-color: #323946; */
+    ;
+    padding: 20px;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    text-align: center;
+}
+
+.home-text, .home-image {
+    flex: 1;
+    min-width: 200px;
+    max-width: 500px; /* Limits the width to avoid overly wide content */
+    text-align: start;
+}
+
+.home-text {
+    padding: 20px;
+}
+
+.home-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+button {
+    background-color: aqua; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.home-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .home-text h2 {
+        font-size: 2rem;
+    }
+
+    .home-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-text p {
+        font-size: 0.9rem;
+    }
+    button{
+        font-size: 0.9rem;
+        padding: 10px 10px;
+    }
+}
